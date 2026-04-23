@@ -1,0 +1,115 @@
+---
+import '@fontsource/ephesis';
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Font Preview</title>
+  <style>
+    body { background: #1a0f14; color: #f7f0f3; font-family: system-ui; padding: 3rem; }
+    .name { font-family: 'Ephesis', cursive; font-size: 6rem; }
+    .grad { color: #d45f82; }
+  </style>
+</head>
+<body>
+  <p class="name">Genevieve <span class="grad">Ovsak</span></p>
+</body>
+</html>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #1a0f14;
+      color: #f7f0f3;
+      font-family: system-ui, sans-serif;
+      padding: 3rem 2rem;
+    }
+
+    h1 {
+      font-size: 0.8rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #cfa8b8;
+      margin-bottom: 3rem;
+    }
+
+    .grid {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .font-row {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      padding: 2rem 0;
+      border-bottom: 1px solid #4a2a3a;
+    }
+
+    .font-row:first-child {
+      border-top: 1px solid #4a2a3a;
+    }
+
+    .num {
+      font-size: 0.72rem;
+      color: #a0bc8a;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      width: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .name-display {
+      font-size: clamp(2.8rem, 7vw, 5.5rem);
+      line-height: 1.1;
+      padding-bottom: 1.5rem;
+      flex: 1;
+    }
+
+    .name-display .grad {
+      color: #d45f82;
+    }
+
+    .font-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #8a5c6e;
+      width: 14rem;
+      flex-shrink: 0;
+      text-align: right;
+    }
+
+    .font-label strong {
+      display: block;
+      color: #cfa8b8;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.2rem;
+    }
+
+    /* The 2 fonts */
+    .f-ephesis { font-family: 'Ephesis', cursive; }
+    .f-pinyon  { font-family: 'Pinyon Script', cursive; }
+  </style>
+</head>
+<body>
+  <h1>Ephesis vs Pinyon Script</h1>
+  <div class="grid">
+
+    <div class="font-row">
+      <span class="num">A</span>
+      <div class="name-display f-ephesis">Genevieve <span class="grad">Ovsak</span></div>
+      <div class="font-label"><strong>Ephesis</strong>Current choice</div>
+    </div>
+
+    <div class="font-row">
+      <span class="num">B</span>
+      <div class="name-display f-pinyon">Genevieve <span class="grad">Ovsak</span></div>
+      <div class="font-label"><strong>Pinyon Script</strong>Previous choice</div>
+    </div>
+
+  </div>
+</body>
+</html>

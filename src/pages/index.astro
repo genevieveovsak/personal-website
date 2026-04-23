@@ -1,0 +1,411 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Genevieve Ovsak — Product, Design & Technology">
+
+  <!-- ── NAV ──────────────────────────────────── -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="nav-logo-mark">GO</span>
+        <span class="nav-logo-name">Genevieve Ovsak</span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#focus">Focus</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </div>
+      <button class="nav-mobile-btn" id="mobile-btn" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ──────────────────────────────────── -->
+  <section id="hero" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="container">
+      <p class="hero-eyebrow">Product &nbsp;·&nbsp; Design &nbsp;·&nbsp; AI &nbsp;·&nbsp; Biology</p>
+      <h1 class="hero-name">
+        Genevieve <span class="gradient-text">Ovsak</span>
+      </h1>
+      <div class="hero-callout">
+        <span class="hero-callout-rule"></span>
+        <span class="hero-callout-text">Systems Thinker</span>
+        <span class="hero-callout-rule"></span>
+      </div>
+      <p class="hero-tagline">
+        I work at the intersection of AI, healthcare, and human-centered design —
+        turning complex systems into experiences people actually trust and want to use.
+      </p>
+      <div class="hero-cta">
+        <a href="#experience" class="btn btn-primary">See My Work</a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
+      <p class="hero-location">
+        <span class="hero-location-dot"></span>
+        Maple Grove, MN
+      </p>
+    </div>
+  </section>
+
+  <!-- ── AREAS OF FOCUS ────────────────────────── -->
+  <section id="focus" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">What I Do</span>
+        <h2>Areas of Focus</h2>
+        <p class="section-desc">
+          A deliberately multi-disciplinary background built to operate across domains —
+          each discipline informing and sharpening the others.
+        </p>
+      </div>
+      <div class="focus-grid">
+        <div class="focus-card">
+          <p class="focus-num">01</p>
+          <h3>AI Product Strategy</h3>
+          <p>Defining roadmaps, requirements, and safety guardrails for AI-integrated consumer products. Currently leading a caregiver monitoring platform with sensor-based risk scoring and AI chatbot guidance designed to scale to 100K+ users.</p>
+        </div>
+        <div class="focus-card">
+          <p class="focus-num">02</p>
+          <h3>UX & Product Design</h3>
+          <p>Research-driven, accessible design from discovery to delivery. HCI foundations applied to complex multi-screen workflows — including a 48-screen end-to-end caregiver experience in a high-stakes clinical-adjacent environment.</p>
+        </div>
+        <div class="focus-card">
+          <p class="focus-num">03</p>
+          <h3>Biomedical Sciences</h3>
+          <p>B.S. in Biology on the biomedical sciences track. Hands-on bioinformatics research and clinical-adjacent domain expertise spanning aging-in-place monitoring, remote sensing, and care coordination workflows.</p>
+        </div>
+        <div class="focus-card">
+          <p class="focus-num">04</p>
+          <h3>Data & Analytics</h3>
+          <p>Biostatistics minor with hands-on experience in R, SQL, and Tableau. ASA DataFest 2nd place. Comfortable translating raw data into actionable product decisions and insight-driven user experiences.</p>
+        </div>
+        <div class="focus-card">
+          <p class="focus-num">05</p>
+          <h3>Software Engineering</h3>
+          <p>Full-stack background in Python, JavaScript (Vue), FastAPI, and AWS. Engineered an encryption pipeline for ~5TB of sensitive data and drove a platform architectural redesign toward cloud-scale deployment.</p>
+        </div>
+        <div class="focus-card">
+          <p class="focus-num">06</p>
+          <h3>Leadership & Community</h3>
+          <p>Founded GirlsWhoCode at Furman University — 40+ members, 75+ meetings, 3 conferences. Scrum Master across multiple agile teams. Cross-functional coordinator spanning Engineering, UX, Analytics, and Operations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ────────────────────────────── -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Where I've Been</span>
+        <h2>Experience</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-period">2025 — Present</span>
+              <span class="timeline-location">Eden Prairie, MN</span>
+            </div>
+            <h3 class="timeline-role">Acting Product Owner & Lead Product Designer</h3>
+            <p class="timeline-company">Optum Enterprise Solutions · UnitedHealth Group · New Product Development</p>
+            <ul class="timeline-bullets">
+              <li>Own product vision, strategy, roadmap, and business requirements for Violet — a caregiver-support monitoring product for aging-in-place within Optum's New Product Development team.</li>
+              <li>Defined a sensor-informed risk indicator producing a 3–14-day acute-event likelihood score, driving alerting and escalation workflows for family caregivers.</li>
+              <li>Led cross-team planning for an AI caregiver guidance chatbot; authored requirements, privacy/safety guardrails (no diagnosis; fallback to human), and integration specifications across APIs, logging, and monitoring.</li>
+              <li>Drove architectural redesign from an Epic-based prototype to a Python + cloud architecture (services, data pipelines, auth/PHI, observability) with capacity planning toward ~100K users.</li>
+              <li>Ran 5 structured discovery and review cycles — most recently a demo to 35 senior leaders, many of them active caregivers; designed the complete 48-screen caregiver workflow end-to-end.</li>
+              <li>Embedded regulatory (PHI/privacy), security, and usability safety mitigations directly into requirements, onboarding copy, alert thresholds, and escalation flows.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Product Strategy</span>
+              <span class="tag">AI Integration</span>
+              <span class="tag">UX Design</span>
+              <span class="tag">Agile / Scrum</span>
+              <span class="tag">Healthcare</span>
+              <span class="tag">PHI / Privacy</span>
+              <span class="tag">Cloud Architecture</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-period">Summer 2024</span>
+              <span class="timeline-location">Eden Prairie, MN</span>
+            </div>
+            <h3 class="timeline-role">Full Stack Developer & Scrum Master</h3>
+            <p class="timeline-company">UnitedHealth Group — Technology Development Program (TDP)</p>
+            <ul class="timeline-bullets">
+              <li>Built an internal cybersecurity workflow tool using Python, Vue, and FastAPI that streamlined domain-blocking workflows and reduced response latency.</li>
+              <li>Served as Scrum Master, facilitating agile ceremonies and aligning cross-functional delivery across the internship team.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">Vue</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Scrum Master</span>
+              <span class="tag">Cybersecurity</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-period">Summer 2023</span>
+              <span class="timeline-location">Eden Prairie, MN</span>
+            </div>
+            <h3 class="timeline-role">Software Developer Intern</h3>
+            <p class="timeline-company">Optum Technology · UnitedHealth Group</p>
+            <ul class="timeline-bullets">
+              <li>Engineered an encryption pipeline for ~5TB of sensitive, searchable data — improving integrity, protection, and retrieval performance across a regulated data environment.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">Data Engineering</span>
+              <span class="tag">Security</span>
+              <span class="tag">Regulated Environments</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-period">Summer 2022</span>
+              <span class="timeline-location">Greenville, SC</span>
+            </div>
+            <h3 class="timeline-role">Bioinformatics Research Fellow</h3>
+            <p class="timeline-company">Furman University</p>
+            <ul class="timeline-bullets">
+              <li>Improved a Dual-RNA-Seq visualization interface, expanding visualization options by 50%.</li>
+              <li>Validated usability through structured user studies, following a research → prototype → iterate methodology that mirrors modern product discovery.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Bioinformatics</span>
+              <span class="tag">Data Visualization</span>
+              <span class="tag">User Research</span>
+              <span class="tag">Prototyping</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-period">2022 — 2025</span>
+              <span class="timeline-location">SC / NC / Remote</span>
+            </div>
+            <h3 class="timeline-role">Motion Graphics & Camera Professional</h3>
+            <p class="timeline-company">ESPN+ · CBS/ESPNU · Bon Secours Wellness Arena · Freelance</p>
+            <ul class="timeline-bullets">
+              <li>Produced broadcast-quality motion graphics and live camera work for D1 athletics on ESPN+ and CBS/ESPNU — basketball, football, soccer, volleyball, softball, and lacrosse.</li>
+              <li>Operated PTZ and handheld cameras for arena events and live network broadcasts; deployed motion graphics via Ross Systems/Xpression on arena jumbotrons.</li>
+              <li>Supported remote productions for CBS and ESPNU through Tupelo Honey Production.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Broadcast Production</span>
+              <span class="tag">Motion Graphics</span>
+              <span class="tag">Ross Systems</span>
+              <span class="tag">ESPN+ / CBS</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EDUCATION ──────────────────────────────── -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Where I Come From</span>
+        <h2>Education</h2>
+      </div>
+      <div class="edu-card">
+        <div class="edu-left">
+          <p class="edu-school">Furman University</p>
+          <p class="edu-location">Greenville, SC<br />2021 – 2025</p>
+        </div>
+        <div class="edu-right">
+          <h3 class="edu-degree">B.S. Biology & Information Technology</h3>
+          <p class="edu-minor">Minor in Data Analytics &nbsp;·&nbsp; Biomedical Sciences Track &nbsp;·&nbsp; Biostatistics Focus</p>
+          <div class="edu-honors">
+            <span class="honor-badge">Magna Cum Laude</span>
+            <span class="honor-badge">GPA 3.67</span>
+            <span class="honor-badge">Dean's List — All 8 Semesters</span>
+            <span class="honor-badge">Bell Tower Scholar</span>
+          </div>
+          <p class="edu-note">
+            A deliberate double major designed to bridge biological science and computing from day one —
+            built to work across disciplines long before it became a differentiator.
+          </p>
+        </div>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <p class="project-year">April 2024</p>
+          <h4>ASA DataFest — 2nd Place</h4>
+          <p>48-hour statistics hackathon at Wake Forest University. Led a team through deep analysis of textbook usage, grades, and ratings under competition conditions.</p>
+        </div>
+        <div class="project-card">
+          <p class="project-year">2022 – 2025</p>
+          <h4>Founder, GirlsWhoCode at Furman</h4>
+          <p>Built and led a chapter from the ground up — 40+ members, 75+ meetings organized, 3 conferences attended across the chapter's lifetime.</p>
+        </div>
+        <div class="project-card">
+          <p class="project-year">2023 – 2024</p>
+          <h4>Freelance Web Development</h4>
+          <p>Built a wedding website that drove 150+ RSVPs and a drone videography portfolio with booking and pricing functionality — shipped and used in the real world.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ────────────────────────────────── -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">What I Work With</span>
+        <h2>Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <p class="skill-group-label">Product</p>
+          <div class="skill-pills">
+            <span class="skill-pill">Product Strategy</span>
+            <span class="skill-pill">Roadmapping</span>
+            <span class="skill-pill">Backlog Management</span>
+            <span class="skill-pill">Product Discovery</span>
+            <span class="skill-pill">User Stories & AC</span>
+            <span class="skill-pill">Agile / Scrum</span>
+            <span class="skill-pill">Risk Mitigation</span>
+            <span class="skill-pill">OKR Planning</span>
+            <span class="skill-pill">Stakeholder Alignment</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <p class="skill-group-label">Design & Research</p>
+          <div class="skill-pills">
+            <span class="skill-pill">UX / IA</span>
+            <span class="skill-pill">Usability Testing</span>
+            <span class="skill-pill">Accessible Design</span>
+            <span class="skill-pill">HCI</span>
+            <span class="skill-pill">Personas & Journey Mapping</span>
+            <span class="skill-pill">Research-Driven Iteration</span>
+            <span class="skill-pill">Consumer-First Thinking</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <p class="skill-group-label">Engineering</p>
+          <div class="skill-pills">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">Vue</span>
+            <span class="skill-pill">FastAPI</span>
+            <span class="skill-pill">R</span>
+            <span class="skill-pill">SQL</span>
+            <span class="skill-pill">AWS</span>
+            <span class="skill-pill">Tableau</span>
+            <span class="skill-pill">Java</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <p class="skill-group-label">Domain</p>
+          <div class="skill-pills">
+            <span class="skill-pill">Healthcare / Clinical-Adjacent</span>
+            <span class="skill-pill">PHI / Privacy</span>
+            <span class="skill-pill">AI Safety Guardrails</span>
+            <span class="skill-pill">Bioinformatics</span>
+            <span class="skill-pill">Biostatistics</span>
+            <span class="skill-pill">Cross-Functional Leadership</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ────────────────────────────────── -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="section-header">
+          <span class="section-label">Let's Connect</span>
+          <h2>Get In Touch</h2>
+          <p class="contact-desc">
+            I'm open to conversations across product, design, engineering, biomedical, and
+            wherever your needs might overlap with my background. Reach out — I'd love to talk.
+          </p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:genevieve.ovsak@gmail.com" class="contact-link">
+            <span class="contact-link-label">Email</span>
+            <span class="contact-link-value">genevieve.ovsak@gmail.com</span>
+          </a>
+          <a
+            href="https://linkedin.com/in/genevieve-ovsak-aa8998224"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-link"
+          >
+            <span class="contact-link-label">LinkedIn</span>
+            <span class="contact-link-value">linkedin.com/in/genevieve-ovsak</span>
+          </a>
+          <a
+            href="https://github.com/genevieveovsak"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-link"
+          >
+            <span class="contact-link-label">GitHub</span>
+            <span class="contact-link-value">github.com/genevieveovsak</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ────────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Genevieve Ovsak &nbsp;·&nbsp; Built with Astro &nbsp;·&nbsp; Deployed on Vercel</p>
+    </div>
+  </footer>
+
+  <script>
+    const mobileBtn = document.getElementById('mobile-btn');
+    const navLinks = document.getElementById('nav-links');
+
+    mobileBtn?.addEventListener('click', () => {
+      navLinks?.classList.toggle('open');
+    });
+
+    navLinks?.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+      });
+    });
+  </script>
+
+</Layout>
