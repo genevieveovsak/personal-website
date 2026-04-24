@@ -14,8 +14,10 @@ import Layout from '../layouts/Layout.astro';
       <div class="nav-links" id="nav-links">
         <a href="#focus">Focus</a>
         <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
         <a href="#skills">Skills</a>
+        <a href="#work">Work</a>
+        <a href="#design">Design</a>
+        <a href="#education">Education</a>
         <a href="#contact" class="nav-cta">Contact</a>
       </div>
       <button class="nav-mobile-btn" id="mobile-btn" aria-label="Toggle navigation">
@@ -34,22 +36,43 @@ import Layout from '../layouts/Layout.astro';
       <div class="orb orb-3"></div>
     </div>
     <div class="container">
-      <p class="hero-eyebrow">Product &nbsp;·&nbsp; Design &nbsp;·&nbsp; AI &nbsp;·&nbsp; Biology</p>
+      <div class="currently-badge">
+        <span class="currently-dot"></span>
+        Currently: Product Owner &amp; Lead Designer · Optum NPD
+      </div>
       <h1 class="hero-name">
         Genevieve <span class="gradient-text">Ovsak</span>
       </h1>
       <div class="hero-callout">
         <span class="hero-callout-rule"></span>
-        <span class="hero-callout-text">Systems Thinker</span>
+        <span class="hero-callout-text">Product &times; Design &times; Engineering</span>
         <span class="hero-callout-rule"></span>
       </div>
       <p class="hero-tagline">
-        I work at the intersection of AI, healthcare, and human-centered design —
-        turning complex systems into experiences people actually trust and want to use.
+        I design systems that give people real visibility into their health — because information only helps if it's designed to be understood, not just seen.
       </p>
       <div class="hero-cta">
-        <a href="#experience" class="btn btn-primary">See My Work</a>
+        <a href="#work" class="btn btn-primary">See My Work</a>
+        <a href="/resume.pdf" class="btn btn-secondary" download>↓ Resume</a>
         <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-num">100K+</span>
+          <span class="hero-stat-label">Target Users</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">70+</span>
+          <span class="hero-stat-label">Screens Designed</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">3</span>
+          <span class="hero-stat-label">Platforms Built</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">5TB</span>
+          <span class="hero-stat-label">Data Secured</span>
+        </div>
       </div>
       <p class="hero-location">
         <span class="hero-location-dot"></span>
@@ -61,45 +84,41 @@ import Layout from '../layouts/Layout.astro';
   <!-- ── AREAS OF FOCUS ────────────────────────── -->
   <section id="focus" class="section">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label">What I Do</span>
-        <h2>Areas of Focus</h2>
+      <div class="section-header fade-up">
+        <span class="section-label">Areas of Focus</span>
+          <h2>What I Do</h2>
         <p class="section-desc">
-          A deliberately multi-disciplinary background built to operate across domains —
+          A deliberately multi-disciplinary background built to operate across domains,
           each discipline informing and sharpening the others.
         </p>
       </div>
-      <div class="focus-grid">
+      <div class="focus-grid fade-up">
         <div class="focus-card">
           <p class="focus-num">01</p>
           <h3>AI Product Strategy</h3>
-          <p>Defining roadmaps, requirements, and safety guardrails for AI-integrated consumer products. Currently leading a caregiver monitoring platform with sensor-based risk scoring and AI chatbot guidance designed to scale to 100K+ users.</p>
+          <p>Roadmaps, requirements, and safety guardrails for AI-integrated products in regulated environments, including direct experience defining what AI should and shouldn't do when patient outcomes are downstream.</p>
         </div>
         <div class="focus-card">
           <p class="focus-num">02</p>
-          <h3>UX & Product Design</h3>
-          <p>Research-driven, accessible design from discovery to delivery. HCI foundations applied to complex multi-screen workflows — including a 48-screen end-to-end caregiver experience in a high-stakes clinical-adjacent environment.</p>
+          <h3>UX &amp; Product Design</h3>
+          <p>Research-driven, accessible design for complex multi-role systems. WCAG 2.1 AAA applied as a foundational constraint, shaping decisions around font scaling, screen reader behavior, and high-contrast across every surface.</p>
         </div>
         <div class="focus-card">
           <p class="focus-num">03</p>
           <h3>Biomedical Sciences</h3>
-          <p>B.S. in Biology on the biomedical sciences track. Hands-on bioinformatics research and clinical-adjacent domain expertise spanning aging-in-place monitoring, remote sensing, and care coordination workflows.</p>
+          <p>B.S. Biology &amp; IT, with genuine domain fluency in aging-in-place monitoring, remote sensing, and clinical-adjacent workflows, built through hands-on research and direct healthcare product work.</p>
         </div>
         <div class="focus-card">
           <p class="focus-num">04</p>
-          <h3>Data & Analytics</h3>
-          <p>Biostatistics minor with hands-on experience in R, SQL, and Tableau. ASA DataFest 2nd place. Comfortable translating raw data into actionable product decisions and insight-driven user experiences.</p>
+          <h3>Data &amp; Analytics</h3>
+          <p>Hands-on data analysis using R, SQL, and Tableau, focused on translating raw data into decisions rather than just dashboards. Includes biostatistics coursework and experience presenting quantitative analysis to senior leadership.</p>
         </div>
         <div class="focus-card">
           <p class="focus-num">05</p>
           <h3>Software Engineering</h3>
-          <p>Full-stack background in Python, JavaScript (Vue), FastAPI, and AWS. Engineered an encryption pipeline for ~5TB of sensitive data and drove a platform architectural redesign toward cloud-scale deployment.</p>
+          <p>Full-stack enough to write the API contract, review a PR, and define error states alongside engineers, bridging product intent and technical execution without losing fidelity in translation.</p>
         </div>
-        <div class="focus-card">
-          <p class="focus-num">06</p>
-          <h3>Leadership & Community</h3>
-          <p>Founded GirlsWhoCode at Furman University — 40+ members, 75+ meetings, 3 conferences. Scrum Master across multiple agile teams. Cross-functional coordinator spanning Engineering, UX, Analytics, and Operations.</p>
-        </div>
+
       </div>
     </div>
   </section>
@@ -107,42 +126,48 @@ import Layout from '../layouts/Layout.astro';
   <!-- ── EXPERIENCE ────────────────────────────── -->
   <section id="experience" class="section section-alt">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label">Where I've Been</span>
+      <div class="section-header fade-up">
+        <span class="section-label">The Work</span>
         <h2>Experience</h2>
       </div>
       <div class="timeline">
 
-        <div class="timeline-item">
+        <div class="timeline-item fade-up">
           <div class="timeline-dot"></div>
           <div class="timeline-card">
             <div class="timeline-meta">
               <span class="timeline-period">2025 — Present</span>
               <span class="timeline-location">Eden Prairie, MN</span>
             </div>
-            <h3 class="timeline-role">Acting Product Owner & Lead Product Designer</h3>
+            <h3 class="timeline-role">Product Owner &amp; Lead Product Designer</h3>
             <p class="timeline-company">Optum Enterprise Solutions · UnitedHealth Group · New Product Development</p>
             <ul class="timeline-bullets">
-              <li>Own product vision, strategy, roadmap, and business requirements for Violet — a caregiver-support monitoring product for aging-in-place within Optum's New Product Development team.</li>
-              <li>Defined a sensor-informed risk indicator producing a 3–14-day acute-event likelihood score, driving alerting and escalation workflows for family caregivers.</li>
-              <li>Led cross-team planning for an AI caregiver guidance chatbot; authored requirements, privacy/safety guardrails (no diagnosis; fallback to human), and integration specifications across APIs, logging, and monitoring.</li>
-              <li>Drove architectural redesign from an Epic-based prototype to a Python + cloud architecture (services, data pipelines, auth/PHI, observability) with capacity planning toward ~100K users.</li>
-              <li>Ran 5 structured discovery and review cycles — most recently a demo to 35 senior leaders, many of them active caregivers; designed the complete 48-screen caregiver workflow end-to-end.</li>
-              <li>Embedded regulatory (PHI/privacy), security, and usability safety mitigations directly into requirements, onboarding copy, alert thresholds, and escalation flows.</li>
+              <li>Own product vision, roadmap, requirements, and pilot strategy for Violet, a consumer-first caregiver support and aging-in-place platform; authored 100+ user stories spanning onboarding, provisioning, notifications, accessibility, data visualization, and security. The non-clinical consumer framing shaped every downstream architecture and UX decision.</li>
+              <li>Sole designer of 70+ screens across 3 platforms: led a full phased UI migration from Flutter prototype to production React Native, built a 27-component design system and 14-category web component library, and enforced WCAG 2.1 AAA throughout, covering font scaling, screen reader support, and high-contrast modes across every surface.</li>
+              <li>Designed, built, and own an internal developer admin portal in Next.js + React: analytics views across user engagement, device health, and anomaly detection; caregiver management with health variable trending; activity log ingestion from Splunk; and 4-breakpoint responsiveness. 151 TypeScript files shipped.</li>
+              <li>Led architecture sessions defining the platform's identity and access model: UUID-based user identity, enterprise SSO, a platform-owned proxy API, RBAC, and many-to-many caregiver–patient relationships.</li>
+              <li>Specified product behavior for sensing and alerts: a sensor-driven risk score projecting likelihood of health change over a rolling window, a tiered notification system with emergency, daily, and weekly delivery modes including suppression and quiet hours, third-party device integration via event streaming, and AI chatbot guardrails scoped to informational responses with mandatory human escalation.</li>
+              <li>Defined API contracts and error states to keep backend teams unblocked; coordinated identity provider setup, OAuth/PKCE mobile auth, wireless IoT device pairing, and PHI compliance toward ~100K users; remediated security vulnerabilities across multiple audit cycles; ran 5 discovery cycles including a demo to 35 senior leaders, designed two onboarding flows, and established pilot readiness criteria and a product scorecard.</li>
             </ul>
             <div class="tags">
               <span class="tag">Product Strategy</span>
               <span class="tag">AI Integration</span>
               <span class="tag">UX Design</span>
-              <span class="tag">Agile / Scrum</span>
+              <span class="tag">Flutter / React Native</span>
+              <span class="tag">Design Systems</span>
+              <span class="tag">WCAG AAA</span>
               <span class="tag">Healthcare</span>
               <span class="tag">PHI / Privacy</span>
-              <span class="tag">Cloud Architecture</span>
+              <span class="tag">Azure B2C</span>
+              <span class="tag">Kafka</span>
+              <span class="tag">Systems Architecture</span>
+              <span class="tag">IoT / Device Provisioning</span>
+              <span class="tag">Agile / Scrum</span>
             </div>
           </div>
         </div>
 
-        <div class="timeline-item">
+        <div class="timeline-item fade-up">
           <div class="timeline-dot"></div>
           <div class="timeline-card">
             <div class="timeline-meta">
@@ -152,7 +177,7 @@ import Layout from '../layouts/Layout.astro';
             <h3 class="timeline-role">Full Stack Developer & Scrum Master</h3>
             <p class="timeline-company">UnitedHealth Group — Technology Development Program (TDP)</p>
             <ul class="timeline-bullets">
-              <li>Built an internal cybersecurity workflow tool using Python, Vue, and FastAPI that streamlined domain-blocking workflows and reduced response latency.</li>
+              <li>Built an internal cybersecurity workflow tool using Python, Vue, and FastAPI to consolidate domain-blocking workflows that previously required manual coordination across multiple systems into a single analyst interface.</li>
               <li>Served as Scrum Master, facilitating agile ceremonies and aligning cross-functional delivery across the internship team.</li>
             </ul>
             <div class="tags">
@@ -165,7 +190,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </div>
 
-        <div class="timeline-item">
+        <div class="timeline-item fade-up">
           <div class="timeline-dot"></div>
           <div class="timeline-card">
             <div class="timeline-meta">
@@ -175,7 +200,7 @@ import Layout from '../layouts/Layout.astro';
             <h3 class="timeline-role">Software Developer Intern</h3>
             <p class="timeline-company">Optum Technology · UnitedHealth Group</p>
             <ul class="timeline-bullets">
-              <li>Engineered an encryption pipeline for ~5TB of sensitive, searchable data — improving integrity, protection, and retrieval performance across a regulated data environment.</li>
+              <li>Engineered an encryption pipeline for ~5TB of sensitive, searchable data, improving integrity, protection, and retrieval performance across a regulated data environment.</li>
             </ul>
             <div class="tags">
               <span class="tag">Python</span>
@@ -186,7 +211,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </div>
 
-        <div class="timeline-item">
+        <div class="timeline-item fade-up">
           <div class="timeline-dot"></div>
           <div class="timeline-card">
             <div class="timeline-meta">
@@ -196,8 +221,7 @@ import Layout from '../layouts/Layout.astro';
             <h3 class="timeline-role">Bioinformatics Research Fellow</h3>
             <p class="timeline-company">Furman University</p>
             <ul class="timeline-bullets">
-              <li>Improved a Dual-RNA-Seq visualization interface, expanding visualization options by 50%.</li>
-              <li>Validated usability through structured user studies, following a research → prototype → iterate methodology that mirrors modern product discovery.</li>
+              <li>Improved a Dual-RNA-Seq visualization tool by adding new chart types and view modes; validated changes through structured user studies following a research → prototype → iterate methodology.</li>
             </ul>
             <div class="tags">
               <span class="tag">Bioinformatics</span>
@@ -208,7 +232,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </div>
 
-        <div class="timeline-item">
+        <div class="timeline-item fade-up">
           <div class="timeline-dot"></div>
           <div class="timeline-card">
             <div class="timeline-meta">
@@ -218,9 +242,7 @@ import Layout from '../layouts/Layout.astro';
             <h3 class="timeline-role">Motion Graphics & Camera Professional</h3>
             <p class="timeline-company">ESPN+ · CBS/ESPNU · Bon Secours Wellness Arena · Freelance</p>
             <ul class="timeline-bullets">
-              <li>Produced broadcast-quality motion graphics and live camera work for D1 athletics on ESPN+ and CBS/ESPNU — basketball, football, soccer, volleyball, softball, and lacrosse.</li>
-              <li>Operated PTZ and handheld cameras for arena events and live network broadcasts; deployed motion graphics via Ross Systems/Xpression on arena jumbotrons.</li>
-              <li>Supported remote productions for CBS and ESPNU through Tupelo Honey Production.</li>
+              <li>Produced broadcast-quality motion graphics and live camera work for D1 athletics on ESPN+ and CBS/ESPNU: basketball, football, soccer, volleyball, softball, and lacrosse; operated PTZ and handheld cameras for arena events, deployed graphics via Ross Systems/Xpression, and supported remote productions through Tupelo Honey Production.</li>
             </ul>
             <div class="tags">
               <span class="tag">Broadcast Production</span>
@@ -235,100 +257,49 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- ── EDUCATION ──────────────────────────────── -->
-  <section id="education" class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Where I Come From</span>
-        <h2>Education</h2>
-      </div>
-      <div class="edu-card">
-        <div class="edu-left">
-          <p class="edu-school">Furman University</p>
-          <p class="edu-location">Greenville, SC<br />2021 – 2025</p>
-        </div>
-        <div class="edu-right">
-          <h3 class="edu-degree">B.S. Biology & Information Technology</h3>
-          <p class="edu-minor">Minor in Data Analytics &nbsp;·&nbsp; Biomedical Sciences Track &nbsp;·&nbsp; Biostatistics Focus</p>
-          <div class="edu-honors">
-            <span class="honor-badge">Magna Cum Laude</span>
-            <span class="honor-badge">GPA 3.67</span>
-            <span class="honor-badge">Dean's List — All 8 Semesters</span>
-            <span class="honor-badge">Bell Tower Scholar</span>
-          </div>
-          <p class="edu-note">
-            A deliberate double major designed to bridge biological science and computing from day one —
-            built to work across disciplines long before it became a differentiator.
-          </p>
-        </div>
-      </div>
-
-      <div class="projects-grid">
-        <div class="project-card">
-          <p class="project-year">April 2024</p>
-          <h4>ASA DataFest — 2nd Place</h4>
-          <p>48-hour statistics hackathon at Wake Forest University. Led a team through deep analysis of textbook usage, grades, and ratings under competition conditions.</p>
-        </div>
-        <div class="project-card">
-          <p class="project-year">2022 – 2025</p>
-          <h4>Founder, GirlsWhoCode at Furman</h4>
-          <p>Built and led a chapter from the ground up — 40+ members, 75+ meetings organized, 3 conferences attended across the chapter's lifetime.</p>
-        </div>
-        <div class="project-card">
-          <p class="project-year">2023 – 2024</p>
-          <h4>Freelance Web Development</h4>
-          <p>Built a wedding website that drove 150+ RSVPs and a drone videography portfolio with booking and pricing functionality — shipped and used in the real world.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ── SKILLS ────────────────────────────────── -->
-  <section id="skills" class="section section-alt">
+  <section id="skills" class="section">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header fade-up">
         <span class="section-label">What I Work With</span>
         <h2>Skills</h2>
       </div>
-      <div class="skills-grid">
+      <div class="skills-grid fade-up">
         <div class="skill-group">
           <p class="skill-group-label">Product</p>
           <div class="skill-pills">
             <span class="skill-pill">Product Strategy</span>
             <span class="skill-pill">Roadmapping</span>
-            <span class="skill-pill">Backlog Management</span>
             <span class="skill-pill">Product Discovery</span>
-            <span class="skill-pill">User Stories & AC</span>
             <span class="skill-pill">Agile / Scrum</span>
-            <span class="skill-pill">Risk Mitigation</span>
             <span class="skill-pill">OKR Planning</span>
             <span class="skill-pill">Stakeholder Alignment</span>
+            <span class="skill-pill">JAD Facilitation</span>
           </div>
         </div>
         <div class="skill-group">
-          <p class="skill-group-label">Design & Research</p>
+          <p class="skill-group-label">Design &amp; Research</p>
           <div class="skill-pills">
             <span class="skill-pill">UX / IA</span>
             <span class="skill-pill">Usability Testing</span>
             <span class="skill-pill">Accessible Design</span>
+            <span class="skill-pill">WCAG 2.1 AAA</span>
+            <span class="skill-pill">Design Systems</span>
+            <span class="skill-pill">Personas &amp; Journey Mapping</span>
             <span class="skill-pill">HCI</span>
-            <span class="skill-pill">Personas & Journey Mapping</span>
-            <span class="skill-pill">Research-Driven Iteration</span>
-            <span class="skill-pill">Consumer-First Thinking</span>
           </div>
         </div>
         <div class="skill-group">
           <p class="skill-group-label">Engineering</p>
           <div class="skill-pills">
             <span class="skill-pill">Python</span>
-            <span class="skill-pill">JavaScript</span>
-            <span class="skill-pill">Vue</span>
+            <span class="skill-pill">JavaScript / TypeScript</span>
+            <span class="skill-pill">React Native</span>
+            <span class="skill-pill">Flutter / Dart</span>
             <span class="skill-pill">FastAPI</span>
-            <span class="skill-pill">R</span>
             <span class="skill-pill">SQL</span>
-            <span class="skill-pill">AWS</span>
-            <span class="skill-pill">Tableau</span>
-            <span class="skill-pill">Java</span>
+            <span class="skill-pill">Azure B2C</span>
+            <span class="skill-pill">Kafka / Event Streaming</span>
           </div>
         </div>
         <div class="skill-group">
@@ -337,10 +308,263 @@ import Layout from '../layouts/Layout.astro';
             <span class="skill-pill">Healthcare / Clinical-Adjacent</span>
             <span class="skill-pill">PHI / Privacy</span>
             <span class="skill-pill">AI Safety Guardrails</span>
-            <span class="skill-pill">Bioinformatics</span>
-            <span class="skill-pill">Biostatistics</span>
+            <span class="skill-pill">Identity &amp; Auth Architecture</span>
+            <span class="skill-pill">Event-Driven Architecture</span>
+            <span class="skill-pill">Enterprise API Design</span>
             <span class="skill-pill">Cross-Functional Leadership</span>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CLIENT WORK ─────────────────────────────── -->
+  <section id="work" class="section section-alt">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">Shipped & Live</span>
+        <h2>Client Work</h2>
+        <p class="section-desc">
+          Consumer-facing sites designed from brief to shipped, with UX thinking applied to real conversion goals, guest journeys, and booking flows.
+        </p>
+      </div>
+      <div class="work-grid fade-up">
+
+        <div class="work-card">
+          <div class="work-card-header">
+            <div class="work-card-meta">
+              <span class="work-type">Drone Videography · Business</span>
+              <p class="work-title">UpNorth Perspective</p>
+            </div>
+            <a
+              href="https://genevieveovsak.wixsite.com/upnorth-perspective"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="work-visit-btn"
+              aria-label="Visit UpNorth Perspective site"
+            >Visit ↗</a>
+          </div>
+          <p class="work-desc">
+            Full business website for an aerial drone videography service. Designed across
+            five pages (home, portfolio gallery, services, and two-tier pricing), with
+            YouTube integration and social links. Built for a solo operator to present work
+            professionally and convert visitors to bookings.
+          </p>
+          <div class="work-pages">
+            <span class="work-page-chip">Home</span>
+            <span class="work-page-chip">Portfolio</span>
+            <span class="work-page-chip">Services</span>
+            <span class="work-page-chip">Pricing</span>
+            <span class="work-page-chip">YouTube Integration</span>
+            <span class="work-page-chip">Social Links</span>
+          </div>
+          <div class="tags">
+            <span class="tag">Web Design</span>
+            <span class="tag">UX</span>
+            <span class="tag">Content Strategy</span>
+            <span class="tag">Freelance</span>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <div class="work-card-header">
+            <div class="work-card-meta">
+              <span class="work-type">Wedding · Event</span>
+              <p class="work-title">Meet the Browns</p>
+            </div>
+            <a
+              href="https://genevieveovsak.wixsite.com/meetthebrowns"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="work-visit-btn"
+              aria-label="Visit Meet the Browns wedding site"
+            >Visit ↗</a>
+          </div>
+          <p class="work-desc">
+            Wedding website for Nathan Brown + Grace Ovsak, designed to handle the full
+            guest journey from save-the-date to day-of logistics. Drove 150+ RSVPs through
+            a structured multi-page experience covering the ceremony, reception, hotel
+            accommodations, registry, and contact.
+          </p>
+          <div class="work-pages">
+            <span class="work-page-chip">Home</span>
+            <span class="work-page-chip">About Us</span>
+            <span class="work-page-chip">RSVP</span>
+            <span class="work-page-chip">Where to Stay</span>
+            <span class="work-page-chip">The Big Day</span>
+            <span class="work-page-chip">Registry</span>
+            <span class="work-page-chip">Contact</span>
+          </div>
+          <div class="tags">
+            <span class="tag">Web Design</span>
+            <span class="tag">UX</span>
+            <span class="tag">Form Design</span>
+            <span class="tag">150+ RSVPs</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GRAPHIC DESIGN ───────────────────────── -->
+  <section id="design" class="section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">Visual Communication</span>
+        <h2>Graphic Design</h2>
+        <p class="section-desc">
+          Event posters, recruitment materials, and infographics designed for real audiences. The Dysautonomia Trifecta piece is personal: making complex clinical information accessible to non-specialists is a theme that runs through both the design work and the healthcare products.
+        </p>
+      </div>
+      <div class="design-grid fade-up">
+
+        <div class="design-card">
+          <div class="design-embed-wrap">
+            <iframe
+              loading="lazy"
+              src="https://www.canva.com/design/DAFPUjJPIE0/wXw2WSpTOPx_p0RfcSV_0w/view?embed"
+              allowfullscreen
+              allow="fullscreen"
+              title="GirlsWhoCode speaker event poster"
+            ></iframe>
+          </div>
+          <div class="design-card-footer">
+            <div>
+              <span class="design-type">Event Flyer · GirlsWhoCode</span>
+              <p class="design-title">Speaker Night</p>
+              <p class="design-desc">Two professional software developers as panelists for the Furman GirlsWhoCode chapter.</p>
+            </div>
+            <a href="https://www.canva.com/design/DAFPUjJPIE0/wXw2WSpTOPx_p0RfcSV_0w/view" target="_blank" rel="noopener noreferrer" class="design-view-btn">View ↗</a>
+          </div>
+        </div>
+
+        <div class="design-card">
+          <div class="design-embed-wrap">
+            <iframe
+              loading="lazy"
+              src="https://www.canva.com/design/DAFxqbguWkA/1R_aVxeCuQoJtNaXxzchtQ/view?embed"
+              allowfullscreen
+              allow="fullscreen"
+              title="Consciousness and Artificial Intelligence poster v1"
+            ></iframe>
+          </div>
+          <div class="design-card-footer">
+            <div>
+              <span class="design-type">Event Poster · Speaking Event</span>
+              <p class="design-title">Consciousness &amp; AI</p>
+              <p class="design-desc">Panel event poster for a Furman speaking event with Dr. Darren Hudson Hick and Dr. Syed Fahad Sultan. Version 1.</p>
+            </div>
+            <a href="https://www.canva.com/design/DAFxqbguWkA/1R_aVxeCuQoJtNaXxzchtQ/view" target="_blank" rel="noopener noreferrer" class="design-view-btn">View ↗</a>
+          </div>
+        </div>
+
+        <div class="design-card">
+          <div class="design-embed-wrap">
+            <iframe
+              loading="lazy"
+              src="https://www.canva.com/design/DAGU9umG3R8/yl3-8WMAsIteDfx0WaL5kA/view?embed"
+              allowfullscreen
+              allow="fullscreen"
+              title="The Dysautonomia Trifecta infographic"
+            ></iframe>
+          </div>
+          <div class="design-card-footer">
+            <div>
+              <span class="design-type">Infographic · Medical Awareness</span>
+              <p class="design-title">The Dysautonomia Trifecta</p>
+              <p class="design-desc">Visual explainer breaking down the triad of EDS, POTS, and MCAS, making complex clinical information accessible.</p>
+            </div>
+            <a href="https://www.canva.com/design/DAGU9umG3R8/yl3-8WMAsIteDfx0WaL5kA/view" target="_blank" rel="noopener noreferrer" class="design-view-btn">View ↗</a>
+          </div>
+        </div>
+
+        <div class="design-card">
+          <div class="design-embed-wrap">
+            <iframe
+              loading="lazy"
+              src="https://www.canva.com/design/DAFLAVKxdZ0/eyaFuPFyvzsQOGm3cBb1Ew/view?embed"
+              allowfullscreen
+              allow="fullscreen"
+              title="GirlsWhoCode recruitment poster"
+            ></iframe>
+          </div>
+          <div class="design-card-footer">
+            <div>
+              <span class="design-type">Recruitment · GirlsWhoCode</span>
+              <p class="design-title">Learn to Code</p>
+              <p class="design-desc">Recruitment flyer promoting Learn-A-Language workshops and Coffee &amp; Code open sessions to grow the Furman chapter.</p>
+            </div>
+            <a href="https://www.canva.com/design/DAFLAVKxdZ0/eyaFuPFyvzsQOGm3cBb1Ew/view" target="_blank" rel="noopener noreferrer" class="design-view-btn">View ↗</a>
+          </div>
+        </div>
+
+        <div class="design-card">
+          <div class="design-embed-wrap">
+            <iframe
+              loading="lazy"
+              src="https://www.canva.com/design/DAFxjTeDHEo/y-qLPssYRGQudnP-EAAXBA/view?embed"
+              allowfullscreen
+              allow="fullscreen"
+              title="Consciousness and Artificial Intelligence poster v2"
+            ></iframe>
+          </div>
+          <div class="design-card-footer">
+            <div>
+              <span class="design-type">Event Poster · Speaking Event</span>
+              <p class="design-title">Consciousness &amp; AI <span class="design-version">v2</span></p>
+              <p class="design-desc">A second visual treatment for the same panel, with a different layout and typographic approach.</p>
+            </div>
+            <a href="https://www.canva.com/design/DAFxjTeDHEo/y-qLPssYRGQudnP-EAAXBA/view" target="_blank" rel="noopener noreferrer" class="design-view-btn">View ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EDUCATION ──────────────────────────────── -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">Foundation</span>
+        <h2>Education</h2>
+      </div>
+      <div class="edu-card fade-up">
+        <div class="edu-left">
+          <p class="edu-school">Furman University</p>
+          <p class="edu-location">Greenville, SC<br />2021 – 2025</p>
+        </div>
+        <div class="edu-right">
+          <h3 class="edu-degree">B.S. Biology & Information Technology</h3>
+          <p class="edu-minor">Minor in Data Analytics</p>
+          <div class="edu-honors">
+            <span class="honor-badge">Magna Cum Laude</span>
+            <span class="honor-badge">Dean's List — All 8 Semesters</span>
+            <span class="honor-badge">Bell Tower Scholar</span>
+          </div>
+          <p class="edu-note">
+            A deliberate double major designed to bridge biological science and computing from day one,
+            built to work across disciplines long before it became a differentiator.
+          </p>
+        </div>
+      </div>
+
+      <div class="projects-grid fade-up">
+        <div class="project-card">
+          <p class="project-year">April 2024</p>
+          <h4>ASA DataFest — 2nd Place</h4>
+          <p>48-hour statistics hackathon at Wake Forest University. Led a team through deep analysis of textbook usage, grades, and ratings under competition conditions.</p>
+        </div>
+        <div class="project-card">
+          <p class="project-year">2022 – 2025</p>
+          <h4>Founder, GirlsWhoCode at Furman</h4>
+          <p>Grew it from zero to 40+ members, with 75+ meetings organized and 3 conferences attended over 3 years.</p>
+        </div>
+        <div class="project-card">
+          <p class="project-year">2023 – 2024</p>
+          <h4>Freelance Web Development</h4>
+          <p>Built a wedding website that drove 150+ RSVPs and a drone videography portfolio with booking and pricing functionality, both shipped and actively used. <a href="#work" class="inline-link">See the sites ↓</a></p>
         </div>
       </div>
     </div>
@@ -350,15 +574,18 @@ import Layout from '../layouts/Layout.astro';
   <section id="contact" class="section">
     <div class="container">
       <div class="contact-inner">
-        <div class="section-header">
+        <div class="section-header fade-up">
           <span class="section-label">Let's Connect</span>
           <h2>Get In Touch</h2>
           <p class="contact-desc">
-            I'm open to conversations across product, design, engineering, biomedical, and
-            wherever your needs might overlap with my background. Reach out — I'd love to talk.
+            Currently building Violet at Optum NPD — a platform that monitors biometric and behavioral data for aging adults to surface health risks before they become emergencies. Open to conversations about product leadership, healthcare AI, and complex human-centered systems. If that overlaps with what you're building, let's talk.
           </p>
         </div>
-        <div class="contact-links">
+        <div class="contact-links fade-up">
+          <a href="/resume.pdf" class="contact-link" download>
+            <span class="contact-link-label">Resume</span>
+            <span class="contact-link-value">Download PDF →</span>
+          </a>
           <a href="mailto:genevieve.ovsak@gmail.com" class="contact-link">
             <span class="contact-link-label">Email</span>
             <span class="contact-link-value">genevieve.ovsak@gmail.com</span>
@@ -372,15 +599,6 @@ import Layout from '../layouts/Layout.astro';
             <span class="contact-link-label">LinkedIn</span>
             <span class="contact-link-value">linkedin.com/in/genevieve-ovsak</span>
           </a>
-          <a
-            href="https://github.com/genevieveovsak"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="contact-link"
-          >
-            <span class="contact-link-label">GitHub</span>
-            <span class="contact-link-value">github.com/genevieveovsak</span>
-          </a>
         </div>
       </div>
     </div>
@@ -390,10 +608,12 @@ import Layout from '../layouts/Layout.astro';
   <footer>
     <div class="container">
       <p>© 2026 Genevieve Ovsak &nbsp;·&nbsp; Built with Astro &nbsp;·&nbsp; Deployed on Vercel</p>
+      <a href="https://linkedin.com/in/genevieve-ovsak-aa8998224" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
     </div>
   </footer>
 
   <script>
+    // ── Mobile nav ───────────────────────────────
     const mobileBtn = document.getElementById('mobile-btn');
     const navLinks = document.getElementById('nav-links');
 
@@ -406,6 +626,51 @@ import Layout from '../layouts/Layout.astro';
         navLinks.classList.remove('open');
       });
     });
+
+    // ── Active nav highlighting ───────────────────
+    const sections = document.querySelectorAll('section[id]');
+    const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navAnchors.forEach(a => a.classList.remove('active'));
+          const activeLink = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+          activeLink?.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-30% 0px -60% 0px' });
+
+    sections.forEach(s => sectionObserver.observe(s));
+
+    // ── Scroll fade animations ────────────────────
+    const fadeEls = document.querySelectorAll('.fade-up');
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          fadeObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+
+    fadeEls.forEach(el => fadeObserver.observe(el));
+
+    // ── Click-to-copy email ───────────────────────
+    const emailLink = document.querySelector('a[href="mailto:genevieve.ovsak@gmail.com"]');
+    const toast = document.getElementById('copy-toast');
+
+    emailLink?.addEventListener('click', (e) => {
+      e.preventDefault();
+      navigator.clipboard.writeText('genevieve.ovsak@gmail.com').then(() => {
+        toast?.classList.add('show');
+        setTimeout(() => toast?.classList.remove('show'), 2200);
+      }).catch(() => {
+        window.location.href = 'mailto:genevieve.ovsak@gmail.com';
+      });
+    });
   </script>
+
+  <div class="copy-toast" id="copy-toast">Email copied!</div>
 
 </Layout>
